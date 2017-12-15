@@ -1,95 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-  </style>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {height: 450px}
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+
+            background-color: lightgrey;
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: paleturquoise;
+            color: white;
+            padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {height:auto;}
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
-<body>
+<body> bgcolor="#afeeee">
 
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">MovieMaker</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+
+                <!--<li><a href="#">About</a></li>-->
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+            </ul>
+        </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
 </nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <h1>Functional Specs:</h1>
+            <p>   *Import video clips (.mp4s) and gifs to place on the timeline and export as .mp4.</p>
+            <p>   *Import images (.png .jpg) and place on the timeline.</p>
+            <p>   *Import an audio file (.mp3) and set as the video’s soundtrack.</p>
+            <p>   *Add text to any clip on the timeline.</p>
+            <p>   *Edit the position of any clip on the timeline.</p>
+            <p>   *Remove any clip on the timeline in chronological order.</p>
+
+
+        </div>
+
+        <div class="col-sm-8 text-left">
+            <h1 align="center">Overview</h1>
+            <p>Movie Maker is a video editing application that can be used on windows. The user will be able to store clips locally as well as merge the clips together to make a video. The user can also save the clips as gifs. Also be able to delete, add and render the clip sections. There is a preview window where the clips you have added and can be displayed on to see how the clip has turned out-if it needs to have another effect added, deleted, altogether the clip needs to be deleted, etc.For example, changing the timing of the video or when the subtitles start and end.
+            </p>
+            <hr>
+            <h3 align="center">Example of its handiness</h3>
+            <p>Lucy, mom of two, is typical computer user so she doesn’t know how to use iMovie or Final Cut Pro. She has just come back from a well deserved vacation to Hawaii, she took pictures and videos. She wants to put those pictures and videos together to make a video to show off to her friends. She opens up her terminal on her laptop and calls ‘python main.py’. She is able to load her files from her laptop and put them on a timeline in the order she chooses. Then she inputs what she wants to call the video and hits render and Movie Maker makes a video and saves it onto her laptop
+            </p>
+
+
+
+        </div>
+
+
     </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Overview</h1>
-      <p>Movie Maker is a video editing application that can be used on windows. The user will be able to store clips locally as well as merge the clips together to make a video. The user can also save the clips as gifs. Also be able to delete, add and render the clip sections. There is a preview window where the clips you have added and can be displayed on to see how the clip has turned out-if it needs to have another effect added, deleted, altogether the clip needs to be deleted, etc.For example, changing the timing of the video or when the subtitles start and end.  
-      </p>
-      <hr>
-      <h3>Test</h3>
-      <p>Lorem ipsum...</p>
-    </div>
-    
-      
-    </div>
-  </div>
+</div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
+<!--<footer class="container-fluid text-center">
+    <p>Footer Text</p>
+</footer>-->
 
+    <div class="col-sm-13 text-left">
+        <h2 align="center">User Interface</h2>
+        <center> Mockups of what we had wanted our video editing application to look like.</center>
+    </div>
+<img src="UserInterface.png" style="width:500px;height:450px;">
+
+    <div class="col-sm-13 text-left">
+    <h3 align="center"> Visual UI</h3>
+    <center> End product of our video editor with the allocated buttons, time slicing effect, display window, etc.</center>
+    </div>
+<img src="VisualUI.png" style="width:500px;height:450px;">
+
+    <div class="col-sm-13 text-left">
+        <h4 align="center"> Implementation Overview</h4>
+        <center> The below image represents how our Window, ClipModel, and Clip work hand-in-hand to display the correct image/video at the given time stated by the user.</center>
+    </div>
+<img src="Implementation.png" style="width:900px;height:450px;" style="width:40%">
 </body>
-</html>
+
+
+
